@@ -34,7 +34,7 @@ public class TheunbelievableprojectApplicationTests {
     }
 
     @Test
-    public void contextLoads() throws Exception {
+    public void messageEndpointTest() throws Exception {
         ResultActions result = mvc.perform(get("/"))
                               .andExpect(status().is2xxSuccessful())
                               .andExpect(content().string("The Unbelievable Project"));
