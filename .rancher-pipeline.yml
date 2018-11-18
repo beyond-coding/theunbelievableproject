@@ -15,8 +15,4 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: beyondcoding/theunbelievableproject
-- name: deploy
-  steps:
-  - applyYamlConfig:
-      path: ./deployment.yaml
 timeout: 60
